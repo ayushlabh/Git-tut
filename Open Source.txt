@@ -98,6 +98,7 @@ http://www.google.com/search?q=how+to+start+open+source+contribution+using+C%2B%
   ACM ICPC               // Competetive Coding   /*Competetion*/
   IBM TGMC               // Everything           /*Competetion*/
   Codeforces             // Competetive coding     /*Poor GUI*/
+  kaggle                 // machine learning
 
 
   
