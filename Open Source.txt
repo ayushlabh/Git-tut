@@ -1,0 +1,213 @@
+CS 221 - DS and algo
+CS 310 - Software engg.
+ 
+
+
+
+How to implement test of any software project / source code
+HackerEarth - monk
+https://www.hackerearth.com/getstarted-opensource/
+1.What are some good beginner level open source projects online that I can involve myself in?   /*Quora*/
+1.1 https://github.com/aredridel/how-to-read-code/blob/master/how-to-read-code.md               // Start reading code
+  
+2.http://www.codeproject.com/
+3. planet-source-code.com
+4. sourcecodesworld.com
+   https://www.openhub.net                         /*Information and list of opensource projects*/
+   https://github.com/Himmele/Mindroid.cpp         /*Lots of C++ code*/
+   https://www.hackerearth.com/codemonk/           /*All the algorithms related topics*/    //best for competetive coding 
+
+  5. https://github.com/fffaraz/awesome-cpp  
+
+Some Amazing Websites
+------------------------
+glassdoor.ca
+careercup.com
+geeksforgeeks.org
+leetcode.com
+hackerrank.com
+topcoder.com
+     
+
+5.1 Open bugzilla/bugsahoy
+    search resolved bugs in C++
+    see patch files and try to understand the code
+
+https://mva.microsoft.com/en-us/training-courses/software-development-fundamentals-8248?l=xiawPHKy_5104984382   // software development course online
+
+
+ I hve asked a question on quora on comment to the question :
+     How can a high-school student who is learning C++ start contributing to open source?
+    Answer by Tapasweni pathak
+
+
+Reading Order of source code
+-------------------------------
+
+Do you start at the entry point of a package?
+
+How about in a browser?
+
+Maybe find the biggest source code file and read that first.
+
+Try setting a breakpoint early and tracing down through functions in a debugger.
+
+Try setting a breakpoint deep in the code, and reading each function in the call stack
+
+
+
+pending
+---------
+https://www.youtube.com/watch?v=IXnNgLmd6BM    // open source video of 3 hour
+
+https://www.quora.com/Which-open-source-projects-are-simple-enough-for-beginners-to-start-working-on
+https://www.quora.com/What-are-some-open-source-C++-projects-that-I-can-learn-from-and-contribute-to
+https://www.quora.com/What-open-source-software-projects-can-a-C++-beginner-learn-from-and-contribute-to
+What is the most beginner friendly open source project to start contributing in Java or C or C++?
+https://www.quora.com/topic/Open-Source
+http://www.google.com/search?q=how+to+start+open+source+contribution+using+C%2B%2B&client=safari&rls=en&hl=en&sa=X&as_q=&nfpr=&spell=1&ved=0ahUKEwjo4JGBsdXNAhUINo8KHSCdD9YQvwUIEQ
+
+
+
+5.2  Some Communities
+------------------------
+ Mozilla
+ KDE
+ Apache
+ Fedora
+ 
+ 
+
+
+6. SITES
+   codehaus
+   sourceforge
+   github
+   Google code
+
+7.COMPETETIONS
+  OpenHatch
+  Topcoder               // Development , Design , Algorithm , Data Science
+  Codechef               // Competetive coding
+  Hackerearth            // Everything
+  Spoj                   // Competetive coding 
+  TCS Codevita           // Everything           /*Competetion*/
+  Google code jam        // Algorith             /*Competetion*/
+  Facebook Hacker cup    // Algorith             /*Competetion*/
+  Microsoft Imagine cup  // Everything           /*Competetion*/
+  ACM ICPC               // Competetive Coding   /*Competetion*/
+  IBM TGMC               // Everything           /*Competetion*/
+  Codeforces             // Competetive coding     /*Poor GUI*/
+
+
+  
+
+
+/********       SCOPE OF C++ IN MOZILLA        *********/
+-------------------------------------------------------------
+Gecko      -    Engine that drives Firefox
+MathML     -    Display and represent math formulas on the web
+emscripten -    Creating a LLVM-to-JS system to allow porting native code to the web
+Boot2Gecko -    The operating system for Android phones built on web technologies
+Seamonkey  -    The open source web productivity suite
+Thunderbird-    The open source email client
+SVG Project-     Help with the implementation and testing of Mozilla's Scalable Vector Graphics engine
+
+Subparts
+----------
+Testing Software
+Advocacy
+User experience design
+
+
+
+
+
+/***********************             TOPCODER             **************************/
+_______________________________________________________________________________________
+---------------------------------------------------------------------------------------
+
+
+
+  DEVELOPMENT              DESIGN                DATA SCIENCE              ALGORITHM
+ --------------           --------              --------------            -----------  
+                          
+  1.Code		1.Wireframes/ 		   1.Code                  1.Single
+  2.Assembly              Information              2.Idea Gen                Round Match
+  3.First2Finish	  Architecture		   3.First2Finish
+  4.UI Prototype        2.Web Design             
+  5.Architecture        3.Mobile Design
+                        4.Application
+                          Front-end Design 
+                        5.First2Finish
+
+
+Competition Review Process Conceptualization       // For example submission of a challenge
+Try to download submission from online review
+ http://software.topcoder.com/catalog/             // something about example submission
+
+
+
+
+
+
+
+
+
+
+
+GitHub
+---------
+UN- ayushlabh
+PW- 14January97 
+
+Bitbucket
+------------
+UN- ayushlabh
+PW- 14January97
+
+Topcoder
+-----------
+UN- ayushlabh
+PW- 14January97 
+
+OpenHatch
+-----------
+UN- ayushlabh
+PW- neverever
+
+HackerEarth
+-------------
+UN- ayushlabh
+PW- neverever
+
+CodeChef
+-----------
+UN- ayushlabh
+PW- neverever
+
+Hackerrank
+------------
+UN- ayushlabh
+PW- neverever
+
+Spoj
+-----
+UN - ayushlabh
+PW - neverever
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

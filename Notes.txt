@@ -1,0 +1,424 @@
+
+
+
+---------------------
+  Operating systems
+---------------------
+
+  1) OS is Kernal + System softwares (kernal is the heart of OS )
+  2) POST (Power On Self Test)
+
+Process Management
+--------------------
+
+  1) Process -  A program in execution . A process is the basic unit of work to be implemented in system. eg. We write a program
+                in text file and when we execute the program it becomes a process.
+  
+  2) Process Control Block(PCB)
+
+  3) Thread - A thread is an independent sequence of instruction . Same process thread shares address space, variable and 
+              process state and have their own register, stack and program counter.
+
+  3) States of process - Ready state , Running state , Waiting State(waiting for some resource or some command)
+  
+  4) Context Switching - Loading and unloading process from ready state to running state , and saving context of unloaded process.
+
+  5)  Preemptive and non-preemptive - preemptive processes can be swapped from CPU between execution.
+
+  6) Scheduling Algorithms
+ 
+      i) First Come First Serve 
+     ii) Shortest Job First              // non-preemptive
+    iii) Shortest Remaining Time First   // preemptive
+     iv) Round Robin                      // fixed time slice is called "Quantum"
+      v) Priority based                 // both preemptive and non-preemptive
+
+  7) Starvation - When a process doesn't get resource it need and it has to wait for long period of time coz required resources are
+                   allocated to other processes.
+
+  8) Aging - Aging is a technique to avoid starvation . Continuously increase priority with time 
+
+  9) Convoy Effect - In FCFS , one slow process(large burst time) slows the performance of entire set of processes. 
+
+
+Process Synchronisation
+------------------------
+
+  1) Independent and cooperetive processes - execution of one does or doesn't affect other
+
+  2) Critical Region/Section - region(code segment) that can be accessed by only one process/thread at a time. e.g. file , database
+  
+  3) Critical section problem:
+ 
+      i) Mutual exclusion - no other process can enter critical section when its occupied
+     ii) Progress       - no process can prevent other processes to enter critical region when it is empty 
+    iii) Bounded waiting - there is a bound on waiting time after a process requester to enter critical section 
+
+  4) Inter Process Communication by 2 ways :
+
+     i) Shared memory
+    ii) Message passing
+ 
+  5) Mutex - It is a locking mechanism . The process inside critical section acquires the mutex hence no other process
+             can enter that section. Ownership is associated with mutex. has lock() and unlock() routines
+
+  6) Semaphore -   It is a signalling mechanism . semaphore is a protected variable that restricts access to shared resource.
+                   Semaphore variable keeps count of available resource and decrement/increment it accordingly and restricts
+                   access when count goes to 0. Has wait() and signal() routines  
+
+  7) Deadlock - It is a situation when set of processes are blocked as the processes are holding some resource and waiting for
+                some resource held by some other process.
+
+  8) Necessity for deadlock :
+           
+           i) Mutual exclusion - resources are non-sharable (only one process can use at a time)
+          ii) Hold and wait - each process is holding some resource and waiting for some other resource
+         iii) No preemption - All processes are non-preemptive
+          iv) Circulat wait - All processes are waiting in a circular way
+
+  9) Priority inversion and its solution , Priority Inheritance
+  
+ 
+  2) head and tail command    
+
+  4) Producer consumer problem ( Bounded buffer problem)  -  uses sleep() and wakeup() routines
+
+  5) Banker's algorithm for deadlock avoidance
+
+  
+Memory Management 
+------------------
+ 
+  6) Contiguous and non-contiguous memory allocation
+
+  1) External fragmentation - When space required by process is available in memory but not contiguously
+  
+  2) Internal fragmentation - When placing a process in a memory slot leaves space that can't be utilized by any further process
+
+  3) memory allocation algorithm - best fit , first fit , worst fit  - best fit is slow and its not always best
+
+  7) Fragments of primary memory are called "Frames" and fragments of secondary memory or processes 
+     are called "Pages" and they are equal in size.
+
+  8) "PAGING" is physical division and is of fixed size while "SEGMENTATION" is logical division and neen not be of fixed size.
+
+  9) Virtual Memory - to free some space in main memory some process is shifted to secondary memory , that part of secondary memory
+                      is known as Virtual memory .
+ 
+ 10) Demand Paging - The process of loading page in memory when page fault occurs 
+
+ 11) Thrashing - It is the state when CPU is busy in swapping or loading process in memory .  
+
+ 12) "Page Hit" when we get the required page in memory and "Page miss/page fault" when we didn't get required page in memory
+
+ 13) Page replacement algoriths - If a process requires main memory , this decides which process to be sent to virtual memory 
+
+     i) First In First Out  (FIFO) - uses queue
+    ii) Least Recently Used (LRU)  - uses queue with doubly linked list and hash                     // hash for checking availability 
+   iii) Optimal algorithm           - checks the ready queue to see which process is not required            //best
+                                       for longest period of time                                             
+
+
+ 14) Belady's anomaly - When increasing no. of frames results in increase of no. of faults. Common in FIFO 
+
+ 15) Caches and TLB (Translation Lookaside buffer)      // read in detail
+
+
+
+
+
+
+
+---------------------------------
+   Database Management System
+---------------------------------
+
+  1) Advantage of DBMS over file system
+
+     i) Reduces redundancy
+    ii) eleminates inconsistency
+   iii) Concurrent access
+    iv) Security
+ 
+  2) ER model 
+
+  3) Components of Relational model:
+
+      i) Attribute - Column (property of entity) 
+     ii) Tuple - Row
+    iii) Schema - logical structure of database
+     iv) Degree - no. of attributes
+      v) Cardinality - no. of tuples
+
+ 4) Keys in relational modal:    // examples
+
+      i) Candidate key - minimum set of attributes that represent a row uniquely .
+     ii) Super Key - Set of attributes that represents a row uniquely . A candidate key is a super key but vise versa is not true .
+    iii) Primary Key - Out of all the candidates key one key is selected as primary key. 
+     iv) Alternate Key - All candidate keys other than primary key is alternate key.
+      v) Foreign key - If an attribute can only takes value from some other attribute it is foreign key to the attribute it refers.
+                       Referenced attribute should be primary key and the foreign key attribute is calles referencing attribute.
+
+
+ 5) Operations in relational algebra :
+
+     Select (s) - 
+     Project (?) - 
+     Cross Product (X) - All possible combintion of tuples from 2 relations
+     Union (U) -
+     Intersection (n) -
+     Minus (-) -
+     Rename(?) -
+     Join - It is used to combine related tuples from 2 relations into a single relation
+       *Inner join - Contains only matching tuples
+          Natural join - Based on common attributes
+          Theta join - based on comparision operator          
+          Equijoin - based on only '=' comparision operator
+
+     for 2 relations R and S
+  
+       *Outer join - contains all tuples from either relation 
+          Left outer join - Contains all tuples of R, and those tuples that don't satisfy condition has NULL for attribute of S.
+          Right outer join - Contains all tuples of S, and those tuples that don't satisfy condition has NULL for attribute of R.
+          Full outer join - Contains all tuples of both R and S ,for tuples of S that don't satisfy condition has NULL for attribute
+                            of R and vice versa .
+
+
+  6) WHERE vs HAVING - WHERE works on rows data while HAVING works on aggregate data .
+
+  7) Truncate vs Drop - TRUNCATE removes everything from table but preserves structure of table but DROP deletes the complete
+                        structure of table .
+
+  8)  Transaction  - Set of logically related operations(statements) .
+ 
+  9) ACID for transaction (Atomicity,Consistency,Isolation,Durability)
+
+  10) Commit - If all statements of transaction gets executed then only change is made permanent in Database.
+
+  11) Rollback - If any of the statement fails in execution all the previous changes of given transaction are undone
+
+  12) DML(manipulation) - INSERT,DELETE,UPDATE
+      DDL(definition ) - CREATE,DROP,TRUNCATE
+      DCL(control) - GRANT , REVOKE
+      TCL(transaction) - COMMIT, ROLLBACK 
+
+  13) Functions dependency    // In detail
+
+  14) Normalisation - Method of decomposing tables to eliminate redundancy and Insert,Update and delete Anamolies.
+
+          Update anamoly - Inconsistency due to partial update of redundant data
+          Insert anamoly - Inability to insert data due to absense of other data
+          Delete anamoly - loss of data due to deletion of some other data 
+
+  15) prime and non-prime attribute - attributes that are part of candidate key and vise versa
+
+  16) Normal forms :
+
+          for every function dependency X->Y in table
+
+      i) 1NF - single valued attribute
+     ii) 2NF - no partial dependency ( no subset of candidate key can determine any non-prime attribute)
+    iii) 3NF - any of two condition should meet
+               a) X should be a superkey
+               b) Y is a prime attribute (each attribute of Y is part of a candidate key)
+     iv) BCNF - X should be a superkey
+
+  17) Database Index - Data Structure used for quickly locating data in database .
+
+
+
+
+
+-------------------------
+  Computer Networks
+-------------------------
+
+  Host / Client is used for any device connected in network
+ 
+ 1) types of Addresses in a computer
+
+   i) Physical Address(MAC Address) - fixed at the time of manufacturing and stored in NIC. 48 bits(6 byte)
+  ii) Logical Address (IP Address) - Everyhthing connected to internet has an IP Address and it isn't fix(it can be dynamic)
+ iii) Port Number(Address) - each application running on computer has different port address
+      // A physical port(computer female port) is different from logical port
+     
+ 2) DHCP(Dynamic Host Configuration Protocol) - Provide unique IP Address to host/computers . DHCP servers available in each
+    network keeps record of (IP,MAC) table and lease time (time after which host has to renew IP).
+
+ 3) Simplex -  unidirection
+    Half-Duplex - bidirection, one direction at a time
+    Full-Duplex - bidirection, both directions at a time
+
+ 3) Devices: Hub - Broadcasts data,half duplex                    // physical layer
+             Bridges - uses Mac address                           // link layer
+             Switch -  bridge with more ports,full duplex         // link layer 
+             Router - transmit data base on IP address            // network layer
+             Gateway - join networks that uses different base protocols
+
+ 4) TCP/IP - Set of protocols to determine how data is transmitted accross networks. 4 layer Model
+         
+       i) Network Access Layer - How data is transferred physically (in form of bits). 
+
+        CSMA/CD(Carrier Sense Multiple Access / Collision Detection)
+        FDDI(Fiber Distributed Data Interface) - uses optical fiber 
+        DSL(Digital Subscriber line) - transmits data over telephone line 
+        Ethernet -   Link layer Protocol and works on MAC Adress
+	Token ring -  Eliminates collision by token passing
+       
+	
+      ii) Internet Layer  -  Responsible for forming data packets with source and destination address
+
+	IP - Fragmentation and Addressing of packets
+	ICMP(Internet Control Message Protocol) - Used to report problems with IPv4 datagrams
+	ARP(Address Resolution Protocol) - To resolve an IP address to MAC address
+
+     iii) Transport Layer
+
+	TCP(Transmission Control Protocol) - Breaking up the message and reassembling them in correct order  // connectioned
+	UDP(User Datagram Protocol) - fast , no flow control, no error recovery , not reliable               // connectionless
+
+      iv) Application Layer - How programs or applications interact in network	
+
+	HTTP(Hypertext Transfer Protocol) - Distributing information in world wide web through client-server architecture. web browsers are client.
+	HTTPS(HTTP Secure) - Secure connection and encryption
+        FTP(File Transfer Protocol)  
+	DNS(Domain name System) - Converts IP to domain name
+	SMTP(Simple mail transfer protocol)
+	DHCP(dynamic host configuration protocol)
+
+  5) Netword ID - Part of IP that identifies the network on which device is connected
+     Host ID - Uniquely identifies device in a network
+
+  6) Subnet mask - masks IP address to get network address out of it. 
+
+  7) Unicast - One sender to one receiver
+     Multicast - One/many sender to many receiver.can cross network but need not access all nodes of network  // rare
+     Broadcast - One sender to all nodes in a network               // FF:FF:FF:FF
+     Anycast - Many sender to few receiver
+
+  8) Classfull addressing - IP is divided into A,B,C,D,E classes with fixed subnet mask length
+     Classless addressing - Subnet mask length is not fixed
+
+  9) Socket - Its IP + Port No.
+
+ 10) Bit stuffing - Adding bit to differentiate data bits in frame from delimiter flags. //delimiters are used at ends or frame
+       eg. 01111110 is used as delimiter , so whenever there are 5 continuous 1s in frame data a 0 is added(stuffed).
+ 
+ 11) Jitter - It is delay in arriving of some packets at receiver.It causes audio and video lag
+
+ 12) Error control -
+  
+         parity
+         CRC (Cyclic redundancy check) 
+         checksum 
+
+ 13) Flow control -           // also read piggybacking
+
+         Stop and wait ARQ
+         Go back N
+         Selective Repeat
+
+ 14) Media Access Control - 
+ 
+         Pure and slotted ALOHA
+         CSMA(Carrier Sense Multiple Access)
+              1- persistent
+              p- persistent
+              n- persistent
+         CSMA/CD - Collision Detection
+         CSMA/CA - Collision Avoidance              
+ 
+
+ 15) hamming distance - no. of difference in corresponding bits
+
+
+
+
+
+
+
+---------------------------------
+  Object Oriented Programming          // using vehicle/student example
+---------------------------------
+
+   
+     Object Oriented Programming (OOP) is a programming paradigm where the complete software operates as a bunch of objects
+     interacting with each other .
+
+
+  1) Class - It is a user defined data type and contains properties and functions based on which objects are defined
+       
+      eg. class Student
+          {
+             string name;
+	     int age;
+	   public:
+	     char grade();
+	     int rank();
+             void isTeenager();
+          }       
+
+  2) Object -  It is a basic unit in OOPs. An object present a particular instace of class.
+
+       eg.   class Student{ };
+
+       objects can be
+          student ayush;             // each student have their own data, eg age,roll no.,full name etc
+          student sana;
+          student kartik;
+          student lalit;
+
+  3) Encapsulation - Wrapping up of data and functions in a single unit(class) .            
+
+  4) Abstraction    // Data hiding
+
+            -  providing only needed information and hiding implementation details. 
+ 
+                eg. in an ATM machine if we choose withdrawal option , we get our money but we don't know what mechanism
+                goes on within machine when we hear that churnin/note counting sound (although we are curious about it :p)
+ 
+  5) Data inside a class is not accessible to outside world and only member functions can access it. And hence abstraction 
+     and encapsulation leads to Data Hiding. 
+
+  5) Polymorphism - Polymorphism basically means taking more than one form .
+
+           c++ supports 2 types of polymorphism 
+          
+	   i) Operator overloading - making an operator exibiting different behavior at diffenet instances .
+              eg. + operator used for adding and it can be overloaded to add objects of a class
+          
+          ii) Function overloading - different functions can have same name and differs in argument list
+                 Overloaded functions can have same or different return types but should differ in argument list.
+                 eg. int sum(int a,int b);
+ 		     int sum(int a,int b,int c);    // true
+		     double sum(int a,int b);       // error
+ 		     double sum(int a,float b);     // true
+
+  6) Inheritance - Property by which object of one class inherits properties from other class . Inheritance provides reusability.
+          
+          eg. objects of class student inherits properties like age , name from people
+              objects of class cars inherits properties like mileage, top speed from vehicle.
+
+ 
+  7) Compile time vs runtime polymorphism   
+          
+         Compile time polymorphism(function overloading) - It provides multiple defintion of function with same name by 
+                   changing parameter . It is implemented at compile time itself
+
+         Runtime polymorphism(function overriding) - Redifing a function in derived class with same name and signature
+                   i.e. parameter and return type.This is implented at runtime and can be achived by declaring the
+                   function of base class virtual.
+
+                   for overriding object should be declared as , derived d; base &b = d;
+
+
+
+
+
+
+
+
+
+
+
+

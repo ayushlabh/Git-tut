@@ -1,0 +1,176 @@
+1. analyse the problem
+2. think of an algorithm for solving it
+3. develop a running code for that algorithm
+4. test the code for all given inputs
+5. if not working think of different algorithm(atleast 2 tries)
+6. read the discussion and try to find answer
+7. see the solution in editorial and code yourself
+8. see the successful submissions 
+
+
+--------------------------
+Standard template of code
+--------------------------
+
+
+
+#include <bits/stdc++.h>
+#define ll long long int       
+
+using namespace std;
+
+int main()
+{
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  cin.ignore();    // for string inputs
+}
+
+
+
+
+ Converting digit to String and String to digit
+-----------------------------
+
+
+
+ int main()
+{
+  int a = 2356;
+  stringstream ss;
+  ss << a;
+  string strn = ss.strn();           // now a is stored as string and each digit can be access seperately
+  stringstream strstm;
+  int number;
+  string str = "12356";
+  strstm << str;
+  strstm >> number;                  // now given string has int data type
+
+}
+
+---------
+weakness 
+---------
+1. 2D array
+2. Vectors
+3. Recursion
+4. Pointers
+
+----------
+  Notes
+----------
+
+* use cout<<"/n" istead of cout<<endl;    //for large outputs as it is fast
+* #include<bits/stdc++.h>                 //includes all header
+* #define ll long long int
+* do not use uninitialized integer
+* if array size is more than 10^6 (10^3 * 10^3) , declare it globally
+* for large numerical values you should use long int / long long int instead of int
+* unordered_set<char> should be used for all 26 distinct alphabets
+* pow(base,exp) is used for power NOT base^exp , ^ is bitwise operator
+* vector<vector<int>> (5,vector<int>(5)) is used for initializing a 2D array  
+* prefix sum - is used when values of a range of elements are changed in an array
+* XOR bool value with 1 to toggle bit
+* if O(n) gives TLE then try the program in C language
+* a <set> contain only distinct elements in sorted order
+* we can store the list of all primes in an array for comparison 
+* cout<<char(n) - for printing alphabet from ASCII value
+* cout<<fixed<<setprecision(3)<<23.12356 - // 23.124  <iomanip> 
+* INT_MIN and INT_MAX
+
+
+-----------
+   new
+-----------
+
+-> cin.ignore() - just above "while(T--);"
+-> ios_base::sync_with_stdio(false);   - to reduce C++ runtime to C runtime
+-> cout and printf have large running time difference
+-> intVec.size() - for no. of elements in array
+-> next_permutation - for next lexicographical order
+-> getline(cin,str) - for getting string with spaces
+-> sort(v.begin(),v.end()) - for sorting vector
+-> sort(v.begin(),v.end(),greater<int>()) - for sorting in descending order
+-> stable_sort() - for stable sorting
+-> pow(base,exp) - for power
+-> while(getline(cin,s)) - to take input till end of file
+-> istringstream iss(s) - to read a string
+-> fill_n(array,100,1) - to initialize array by value other than 0
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------
+    Algorithm  and Data Structures
+---------------------------------------
+
+
+Algoirthms
+------------
+
+
+# Brute force / greedy -> To check all possible combinations to find the solution(if it exist).
+# Dynamic programming -> problems are divided into subproblems and answers are stored
+# 2 pointer approach ->   
+# Backtracking ->
+
+--------------------------------------
+
+# Euclids algorithm -> to find all prime nos by making multiples of prime no. composit
+
+
+
+
+---------------------------------------------------------------------------------
+
+
+Data structures
+----------------
+
+# Graph
+# Binary tree
+# Binary search tree
+# Heap
+# Hash tables
+# Segment trees
+# Binary indexed tree (Fedrick tree)
+# Trie
+# Union-find disjoint set
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+Topics
+--------
+1. Recusion - Used to break complex problems into simpler ones.
+https://www.topcoder.com/community/data-science/data-science-tutorials/an-introduction-to-recursion-part-1/
+  3 Types :-                      
+                                        Take care of
+i> Hierarchy,Network and graph -       missing statements
+ii> Multiple related decisions -       Avoid cycles
+iii> Explicit recursive relationship - Avoid repetetive calculations(memoization)
+
+
+
+2.Dynamic programming - 2 types:- 
+
+i> Overlapping substructure - problems are divided into subproblems and answers are stored .
+ways to store values :
+a) Memoization (Top down) - n to 0
+b) Tabulation  (Bottom up)- 0 to n
+
+ii> Optimal substructure - Optimal solution of problem is calculated by optimal solution of subproblems.
+
+
+
+
+  
+
