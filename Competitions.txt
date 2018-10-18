@@ -1,0 +1,14 @@
+
+  OpenHatch
+  Topcoder               // Development , Design , Algorithm , Data Science
+  Codechef               // Competetive coding
+  Hackerearth            // Everything
+  Spoj                   // Competetive coding 
+  TCS Codevita           // Everything           /*Competetion*/
+  Google code jam        // Algorith             /*Competetion*/
+  Facebook Hacker cup    // Algorith             /*Competetion*/
+  Microsoft Imagine cup  // Everything           /*Competetion*/
+  ACM ICPC               // Competetive Coding   /*Competetion*/
+  IBM TGMC               // Everything           /*Competetion*/
+  Codeforces             // Competetive coding     /*Poor GUI*/
+  kaggle                 // machine learning
