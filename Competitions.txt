@@ -1,14 +1,19 @@
-
-  OpenHatch
   Topcoder               // Development , Design , Algorithm , Data Science
-  Codechef               // Competetive coding
   Hackerearth            // Everything
+  Hackerrank
+  Codechef               // Competetive coding
   Spoj                   // Competetive coding 
+  Codeforces             // Competetive coding
+  kaggle                 // machine learning
+  drivenData			 // data science
+  crowdAI     			 // data science
+
+  
   TCS Codevita           // Everything           /*Competetion*/
   Google code jam        // Algorith             /*Competetion*/
   Facebook Hacker cup    // Algorith             /*Competetion*/
   Microsoft Imagine cup  // Everything           /*Competetion*/
   ACM ICPC               // Competetive Coding   /*Competetion*/
   IBM TGMC               // Everything           /*Competetion*/
-  Codeforces             // Competetive coding     /*Poor GUI*/
-  kaggle                 // machine learning
+  
+  

@@ -1,0 +1,19 @@
+-------------- 
+  commands
+--------------
+
+1. git clone - cloning/coping a repsitory from github to the pwd . 
+
+2. git init - To initialize the given local project folder with git . It makes a ".git" hidden folder inside the local project folder .
+
+4. git pull - to get the updates of repo in local folder
+
+3. git status - to view if there is any changed file in local folder that is not added to github repo
+
+4. git add - to propose changes (adding changes to index)
+
+5. git commit - to commiting changes to head (but not to actual github repo)
+
+6. git push origin master - to actually incorporate change in the github repo 
+
+7. git log - to see status of previous commits 
