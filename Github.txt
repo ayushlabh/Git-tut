@@ -14,6 +14,8 @@
 
 5. git commit - to commiting changes to head (but not to actual github repo)
 
-6. git push origin master - to actually incorporate change in the github repo 
+6. git remote add origin https://github.com/tuvtran/project-based-learning.git
 
-7. git log - to see status of previous commits 
+7. git push origin master - to actually incorporate change in the github repo
+
+8. git log - to see status of previous commits 
