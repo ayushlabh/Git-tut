@@ -19,3 +19,7 @@
 7. git push origin master - to actually incorporate change in the github repo
 
 8. git log - to see status of previous commits 
+
+9. git checkout "file path with filename and extension" - undo the things you have done since the last commit or pull if you don't want to commit that
+
+
